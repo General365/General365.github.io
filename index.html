@@ -255,6 +255,8 @@
       </div>
     </section>
 
+    <hr class="gray-separator" style="background-color: #bbb !important;">
+
     <section class="section hero is-small" id="Token Efficiency">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
@@ -287,6 +289,40 @@
       </div>
     </section>
 
+    <hr class="gray-separator" style="background-color: #bbb !important;">
+
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <div class="content" style="padding-left:10%; padding-right:10%">
+              <h2 class="title is-3">Challenging Sources Classification</h2>
+              <div class="level-set has-text-justified">
+                  <p>
+                    <b>A.Construction pipeline</b>: AMO-Bench have built up a comprehensive multi-stage construction pipeline that covers the entire process from question creation to final inclusion. 
+                    This pipeline comprises four major stages: 
+                    <b>(1) Data creation, </b>
+                    all problems are independently designed by mathematics experts from top universities and educational institutions. 
+                    Beyond the final answer, each problem author must provide a detailed step-by-step solution.
+                    <b>(2) Quality review, </b>
+                    each candidate problem undergoes blind review by at least three experts to assess its quality. 
+                    <b>(3) Originality review, </b>
+                    the originality review stage aims to ensure that these newly created problems are not mere rewrites of publicly available materials, but demonstrate genuine originality.
+                    <b>(4) Difficulty review, </b>
+                    we implement a difficulty review stage to filter out problems lacking adequate complexity, to ensure that AMO-Bench presents a sufficient challenge to state-of-the-art LLMs.
+                  </p>
+                <br>
+                  <p>
+                    <b>B.Grading Pipeline</b>: AMO-Bench employs different grading approaches based on the specific answer type for each problem. 
+                     For problems requiring numerical, set, or variable-expression answers (39 out of 50), we employ the <b>parser-based grading</b>. 
+                    For problems requiring descriptive answers (11 out of 50), we use <b>LLM-based grading</b> with o4-mini (Low) serving as the grading model.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   
     
     <!-- Paper abstract -->
@@ -450,6 +486,7 @@
 
 
 </html>
+
 
 
 
